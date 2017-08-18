@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "react-animations": "^0.1.0",
+    "react-icons": "^2.2.5",
+    "react-scroll": "^1.5.4"
+  }
+}
