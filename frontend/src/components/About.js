@@ -30,7 +30,10 @@ const About = () => {
                                 <MdPencil style={s.icons}/>
                             </p>
                             <h3 style={s.headings}>Design</h3>
-                            <p style={s.p}>
+                            <p style={[s.p,s.price]}>
+                                <span style={s.start}>from</span>50<span style={s.currency}>&euro;</span>
+                            </p>
+                            <p style={[s.p,s.desc]}>
                                 I design websites, logos, banners and newsletters.
                             </p>
                         </div>
@@ -41,7 +44,10 @@ const About = () => {
                                 <MdLaptop style={s.icons}/>
                             </p>
                             <h3 style={s.headings}>Integration</h3>
-                            <p style={s.p}>
+                            <p style={[s.p,s.price]}>
+                                <span style={s.start}>from</span>50<span style={s.currency}>&euro;</span>
+                            </p>
+                            <p style={[s.p,s.desc]}>
                                 I integrate graphic projects into code.
                             </p>
                         </div>
@@ -52,7 +58,10 @@ const About = () => {
                                 <MdCode style={s.icons}/>
                             </p>
                             <h3 style={s.headings}>Development</h3>
-                            <p style={s.p}>
+                            <p style={[s.p,s.price]}>
+                                <span style={s.start}>from</span>100<span style={s.currency}>&euro;</span>
+                            </p>
+                            <p style={[s.p,s.desc]}>
                                 I develop web applications.
                             </p>
                         </div>
@@ -72,6 +81,14 @@ const s = {
         display: 'flex',
         flexDirection: 'column'
     },
+    currency: {
+        fontSize: 27,
+        verticalAlign: 'super'
+    },
+    desc: {
+        color: 'rgb(103,120,137)',
+        fontSize: 16
+    },
     face: {
         backgroundImage: `url("${face}")`,
         backgroundSize: 'cover',
@@ -81,14 +98,17 @@ const s = {
         width: 200
     },
     headings: {
-        fontSize: 30,
-        margin: '10px 0'
+        color: 'rgb(38,42,45)',
+        fontSize: 15,
+        fontWeight: 700,
+        margin: '30px 0 0',
+        textTransform: 'uppercase'
     },
     grid: {
         padding: '80px 0'
     },
     icons: {
-        color: 'rgb(1, 7, 119)',
+        color: 'rgb(103,120,137)',
         fontSize: 40
     },
     intro: {
@@ -98,6 +118,14 @@ const s = {
         fontSize: 20,
         margin: 0,
         textAlign: 'center'
+    },
+    price: {
+        color: 'rgb(103,120,137)',
+        fontSize: 72,
+        fontWeight: 300
+    },
+    start: {
+        fontSize: 27
     }
 };
 
