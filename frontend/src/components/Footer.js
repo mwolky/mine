@@ -9,8 +9,7 @@ const Footer = () => {
               <Row>
                   <Col xs={12}>
                       <div style={s.container}>
-                          <p style={s.p}>Web Heaven</p>
-                          <p style={s.p}></p>
+                          <p style={s.p}>&#169; Web Heaven</p>
                       </div>
                   </Col>
               </Row>
@@ -25,9 +24,9 @@ const s = {
         justifyContent: 'space-between'
     },
     footer: {
-        background: 'black',
+        background: 'rgb(7, 22, 30)',
         color: 'white',
-        padding: '40px 0'
+        padding: '20px 0'
     },
     p: {
         fontSize: 16,

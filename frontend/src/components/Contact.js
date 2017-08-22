@@ -39,10 +39,10 @@ const Contact = () => {
 
 const s = {
     banner: {
-        backgroundImage: `url("${cracow}")`,
+        backgroundImage: ` url("${cracow}")`,
+        backgroundAttachment: 'fixed',
         backgroundSize: 'cover',
-        minHeight: '100vh',
-        padding: '80px 0'
+        padding: '80px 0',
     },
     desc:{
         fontSize: 60,

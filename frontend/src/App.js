@@ -4,6 +4,7 @@ import Radium, {StyleRoot} from 'radium';
 import Navigation from './components/Navigation';
 import About from './components/About';
 import Home from './components/Home';
+import Technologies from './components/Technologies';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -20,6 +21,7 @@ class App extends Component {
         <Element name="about">
             <About/>
         </Element>
+        <Technologies/>
         <Element name="contact">
             <Contact/>
         </Element>
